@@ -1,7 +1,7 @@
 {
-  "typewriterDelayMs": 30,
+  "typewriterDelayMs": 18,
   "inventoryLimit": 6,
-  "debug": true,
+  "debug": false,
   "messages": {
     "unknownCommand": "the words scatter before they reach meaning. try something else.",
     "noExit": "there is no path that way.",
