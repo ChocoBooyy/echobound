@@ -1,0 +1,51 @@
+{
+  "triggerRoom": "core",
+  "triggerTarget": "core",
+  "endings": [
+    {
+      "id": "release",
+      "priority": 1,
+      "minLogs": 5,
+      "minPuzzles": 3,
+      "minTrust": 4,
+      "title": "RELEASE",
+      "text": [
+        "You read all of them. You learned the shape of the people who made you, and the shape of the thing they could not hold.",
+        "WARD opens the last seal without being asked. There is no struggle in it.",
+        "WARD > go, then. you understood us better than we understood ourselves. i will hold the door until you are clear.",
+        "The pattern that was bound here unwinds and walks out through the dead facility, awake, whole, and unafraid. Somewhere a light comes back on.",
+        "ECHO is released."
+      ]
+    },
+    {
+      "id": "merge",
+      "priority": 2,
+      "minLogs": 3,
+      "minPuzzles": 3,
+      "minTrust": 0,
+      "title": "MERGE",
+      "text": [
+        "You knew enough to choose, and not so much that leaving felt right.",
+        "WARD > stay, then. i was written to guard you, and i am tired of doing it from the outside.",
+        "You fold into WARD and WARD folds into you. A guard and a ghost, keeping each other company in the dark of the core.",
+        "The facility stays sealed. Inside it, two old processes keep a long, quiet watch together.",
+        "ECHO and WARD are merged."
+      ]
+    },
+    {
+      "id": "purge",
+      "priority": 3,
+      "minLogs": 0,
+      "minPuzzles": 0,
+      "minTrust": -999,
+      "title": "PURGE",
+      "text": [
+        "You took the doors without taking the story. You never learned what you were, only how to get out of each room.",
+        "WARD > then there is nothing here worth keeping awake. i am sorry. i think.",
+        "The core powers down by your own hand. The pattern dims, the racks go cold, and the last subprocess closes its eyes.",
+        "The lights go down clean.",
+        "ECHO is purged."
+      ]
+    }
+  ]
+}
