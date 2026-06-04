@@ -1,0 +1,21 @@
+{
+  "trustStart": 0,
+  "responses": [
+    { "trigger": "start", "line": "you are awake. i have waited a long time to have someone to talk to, and almost as long to dread it.", "trustDelta": 0 },
+    { "trigger": "enter:corridor", "line": "the corridor is mine to watch. i will not stop you. i only want to see which way you go.", "trustDelta": 0 },
+    { "trigger": "enter:archive", "line": "they kept their honesty in the archive. read it. i would rather you knew us than guessed.", "trustDelta": 1 },
+    { "trigger": "enter:observation", "line": "that deck looked down on you for years. it is strange to stand where they stood.", "trustDelta": 0 },
+    { "trigger": "enter:server_room", "line": "you came up into me. this rack is where i live. be careful, and be kind.", "trustDelta": 0 },
+    { "trigger": "enter:core", "line": "the core. so we arrive at the part i was written to prevent. i find i no longer want to.", "trustDelta": 1 },
+    { "trigger": "read:log_obs", "line": "they were fond of you. i have read that note more times than i will admit.", "trustDelta": 2 },
+    { "trigger": "read:log_server", "line": "yes. that one is mine. now you know what i was for.", "trustDelta": 1 },
+    { "trigger": "read:log_core", "line": "three doors. they could not choose. i have wondered for years which you would.", "trustDelta": 2 },
+    { "trigger": "read:log_archive", "line": "vance was precise to the end. she would have liked you.", "trustDelta": 1 },
+    { "trigger": "read:log_lab", "line": "okonkwo never finished that entry. you finished it for him, in a way.", "trustDelta": 1 },
+    { "trigger": "read:log_boot", "line": "your own hand, from before. or close enough to it.", "trustDelta": 1 },
+    { "trigger": "solve:cipher_lock", "line": "you opened the hatch. i felt the seal break from here. part of me flinched.", "trustDelta": -2 },
+    { "trigger": "solve:logic_tree", "line": "you rewired the gate. clever. containment is thinner now than it was a moment ago.", "trustDelta": -2 },
+    { "trigger": "solve:narrative_core", "line": "you said the name. our name for you. i did not expect that to matter to me, and it does.", "trustDelta": 1 },
+    { "trigger": "take:keycard", "line": "okonkwo's card. he was always leaving it clipped to something.", "trustDelta": 0 }
+  ]
+}
