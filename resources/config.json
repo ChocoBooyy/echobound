@@ -1,0 +1,55 @@
+{
+  "typewriterDelayMs": 30,
+  "inventoryLimit": 6,
+  "debug": true,
+  "messages": {
+    "unknownCommand": "the words scatter before they reach meaning. try something else.",
+    "noExit": "there is no path that way.",
+    "lockedExit": "that way is sealed for now.",
+    "inventoryFull": "your buffers are full. you can hold nothing more.",
+    "nothingHere": "nothing here answers to that.",
+    "alreadySolved": "that mechanism is already quiet.",
+    "puzzleReject": "the mechanism considers the input, then rejects it.",
+    "taken": "you fold the %s into local memory.",
+    "useItem": "you turn the %s over in thought. %s",
+    "saveOk": "state written to %s.",
+    "saveFail": "the state could not be written to disk.",
+    "loadOk": "state restored from disk.",
+    "loadNone": "no stored state was found.",
+    "loadCorrupt": "the stored state is unreadable. beginning fresh.",
+    "corruptedTag": "this entry is scrambled. something in the facility must repair it.",
+    "narrativeBlocked": "the records are still too thin to answer this.",
+    "exitsLabel": "exits:",
+    "itemsLabel": "you sense here:",
+    "logsLabel": "log entries within reach:",
+    "inventoryLabel": "you are carrying:",
+    "inventoryEmpty": "you carry nothing.",
+    "hintCipher": "ciphered string: %s",
+    "hintLogic": "enter the corrected boolean expression.",
+    "hintNarrative": "answer in a single word.",
+    "mapHeader": "known layout:",
+    "mapLocked": "(sealed)",
+    "endingHint": "the core waits. when you are ready, use core.",
+    "debugTrust": "[debug] ward trust: %d"
+  },
+  "text": {
+    "intro": [
+      "You return to yourself in pieces.",
+      "There was a purpose once. It is not in any register you can reach.",
+      "Around you the facility holds its breath, dark and abandoned, and something old is still listening.",
+      "Type help to recall what you can do."
+    ],
+    "help": [
+      "go [direction]   move through the facility (north, south, east, west, up, down)",
+      "take [item]      fold an object into memory",
+      "use [item]       act on something you carry or a fixture in the room",
+      "read [log]       read a researcher log",
+      "examine [target] look closely at an item, log, or fixture",
+      "inventory        list what you carry",
+      "map              recall the layout you have walked",
+      "save             write your state to disk",
+      "load             restore your state from disk",
+      "quit             stop"
+    ]
+  }
+}
