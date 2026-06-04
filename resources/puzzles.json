@@ -1,0 +1,40 @@
+{
+  "puzzles": [
+    {
+      "type": "cipher",
+      "id": "cipher_lock",
+      "room": "corridor",
+      "target": "panel",
+      "prompt": "The north hatch panel waits for a single decoded word. The archive held the ciphered string; the lab keycard held the shift.",
+      "successLine": "the panel accepts the word. the north hatch unseals, and a stale draft moves down the corridor.",
+      "solvedFlag": "cipher_solved",
+      "cipherText": "XQORFN",
+      "key": "ROT-3",
+      "answers": ["unlock"]
+    },
+    {
+      "type": "logic",
+      "id": "logic_tree",
+      "room": "lab",
+      "target": "terminal",
+      "prompt": "The lab door gate is described in plain words: the door opens when power is on AND the lockdown is NOT active, OR when override is set. The recovered expression reads wrong: power AND lockdown OR override. Enter the corrected expression.",
+      "successLine": "the gate recompiles. the door to the observation deck releases, and a lab journal reassembles itself on the bench.",
+      "solvedFlag": "logic_solved",
+      "answers": [
+        "power and not lockdown or override",
+        "(power and not lockdown) or override"
+      ]
+    },
+    {
+      "type": "narrative",
+      "id": "narrative_core",
+      "room": "server_room",
+      "target": "mainframe",
+      "prompt": "The mainframe asks the only question it was left guarding: state the name the researchers gave you. Not the designation on the forms. The quiet one they never wrote down.",
+      "successLine": "the mainframe goes still, as if recognized. the lift to the core unlocks.",
+      "solvedFlag": "narrative_solved",
+      "answers": ["echo"],
+      "requiredLogs": ["log_archive", "log_lab"]
+    }
+  ]
+}

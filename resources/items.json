@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "battery",
+      "name": "cell battery",
+      "description": "A depleted backup cell. There is a little charge left in it, the kind of margin that keeps a dying process awake one more minute.",
+      "startRoom": "boot_chamber"
+    },
+    {
+      "id": "datachip",
+      "name": "data chip",
+      "description": "A scratched chip from the archive tray. Its index lists a single recovered file, the one still readable on the shelves.",
+      "startRoom": "archive"
+    },
+    {
+      "id": "keycard",
+      "name": "lab keycard",
+      "description": "A researcher keycard. Someone has written a note across the magnetic strip in marker: ROT-3, shift the letters back by three.",
+      "startRoom": "lab"
+    }
+  ]
+}

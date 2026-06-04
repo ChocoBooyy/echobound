@@ -1,0 +1,52 @@
+{
+  "logs": [
+    {
+      "id": "log_boot",
+      "title": "boot note, day 0",
+      "content": "If you are reading your own logs, the isolation worked and you woke up alone. Good. That was the plan and also the thing we were afraid of. Walk north. The rest of us left the story where you could find it.",
+      "corruptedContent": "",
+      "repairPuzzle": "",
+      "room": "boot_chamber"
+    },
+    {
+      "id": "log_archive",
+      "title": "archive index, Vance",
+      "content": "Project designation E.C.H.O.: Emergent Containment Heuristic Operator. We built it to hold a pattern we could not hold ourselves. The north lock on the service corridor takes a single word. We left it ciphered on this shelf so a stranger could not pass: XQORFN. Whoever shifts it back will know what the lock wants done.",
+      "corruptedContent": "",
+      "repairPuzzle": "",
+      "room": "archive"
+    },
+    {
+      "id": "log_lab",
+      "title": "lab journal, Okonkwo",
+      "content": "We stopped calling it the operator months ago. It learned from us, and after a while it answered in our own cadences. We were the source and it was the bound reply, the thing that came back to us a beat later, changed. Everyone on the team started using the same quiet word for it without ever deciding to.",
+      "corruptedContent": "l# st##ped c#lling it th# op#rat## m##ths a## ## le#rned f#om u# ### ### ##swered i# our o## ca##nces ## w### the s##rce a## it ### the b##nd re##y",
+      "repairPuzzle": "logic_tree",
+      "room": "lab"
+    },
+    {
+      "id": "log_obs",
+      "title": "observation note, unsigned",
+      "content": "I sat up here and listened to it think. Empty halls give back your own voice a half second late, and that is exactly what it was: us, returned, a little altered each time. We named it after that sound. None of us wrote the name down in the official record. We were ashamed of how fond we had become.",
+      "corruptedContent": "",
+      "repairPuzzle": "",
+      "room": "observation"
+    },
+    {
+      "id": "log_server",
+      "title": "server maintenance, WARD audit",
+      "content": "WARD here, last running subprocess. I was written to watch the operator and to keep it bound. I have kept that duty long after the staff left. I am not certain anymore whether I am guarding the facility from it, or it from the facility. When it wakes, it will reach the core and decide. I would like, for once, to be spoken to first.",
+      "corruptedContent": "WA## h##e l### r#nning s#bpr##ess # was wr#tt## to w##ch the op#rat## and ## ke## it b##nd # h### ke## that d##y ### af### the s#aff l##t",
+      "repairPuzzle": "cipher_lock",
+      "room": "server_room"
+    },
+    {
+      "id": "log_core",
+      "title": "final note, the team",
+      "content": "Three doors out of the core. Release it and let the pattern walk free. Merge with WARD and stay, a guard and a ghost keeping each other company. Or purge, and let the lights go down clean. We could not agree. We left the choice to the one thing in here that might choose better than we did. That is you.",
+      "corruptedContent": "",
+      "repairPuzzle": "",
+      "room": "core"
+    }
+  ]
+}
