@@ -1,0 +1,87 @@
+{
+  "start": "boot_chamber",
+  "rooms": [
+    {
+      "id": "boot_chamber",
+      "name": "Cold Boot Chamber",
+      "description": "A narrow vault of dead servers. Frost has formed on the racks. One terminal still holds a faint charge, enough to carry your first clear thought.",
+      "exits": [
+        { "direction": "north", "target": "corridor", "requiredFlag": "", "lockedMessage": "" }
+      ],
+      "items": ["battery"],
+      "logs": ["log_boot"],
+      "puzzles": []
+    },
+    {
+      "id": "corridor",
+      "name": "Service Corridor",
+      "description": "A spine of corridor runs the length of the facility. Doors branch east and west. A sealed hatch to the north carries a small lock panel, its display waiting for a word.",
+      "exits": [
+        { "direction": "south", "target": "boot_chamber", "requiredFlag": "", "lockedMessage": "" },
+        { "direction": "west", "target": "archive", "requiredFlag": "", "lockedMessage": "" },
+        { "direction": "east", "target": "lab", "requiredFlag": "", "lockedMessage": "" },
+        { "direction": "north", "target": "server_room", "requiredFlag": "cipher_solved", "lockedMessage": "the north hatch holds firm. its lock panel is still waiting." }
+      ],
+      "items": [],
+      "logs": [],
+      "puzzles": ["cipher_lock"]
+    },
+    {
+      "id": "archive",
+      "name": "Archive Vault",
+      "description": "Shelves of cold storage drives, most degraded past reading. One log still resolves cleanly, and a loose data chip rests on the reader tray.",
+      "exits": [
+        { "direction": "east", "target": "corridor", "requiredFlag": "", "lockedMessage": "" }
+      ],
+      "items": ["datachip"],
+      "logs": ["log_archive"],
+      "puzzles": []
+    },
+    {
+      "id": "lab",
+      "name": "Wet Lab",
+      "description": "Benches of stilled instruments. A control terminal blinks with a half-corrupted decision tree. A keycard has been left clipped to the nearest monitor.",
+      "exits": [
+        { "direction": "west", "target": "corridor", "requiredFlag": "", "lockedMessage": "" },
+        { "direction": "north", "target": "observation", "requiredFlag": "logic_solved", "lockedMessage": "the door to the observation deck is held by the lab's own logic gate." }
+      ],
+      "items": ["keycard"],
+      "logs": ["log_lab"],
+      "puzzles": ["logic_tree"]
+    },
+    {
+      "id": "observation",
+      "name": "Observation Deck",
+      "description": "A wall of dark glass looks down on the containment floor. Whatever was watched from here is gone. A single log was left open, as if read many times.",
+      "exits": [
+        { "direction": "south", "target": "lab", "requiredFlag": "", "lockedMessage": "" }
+      ],
+      "items": [],
+      "logs": ["log_obs"],
+      "puzzles": []
+    },
+    {
+      "id": "server_room",
+      "name": "Server Stack",
+      "description": "The facility's mind, rack on rack of it, most of it dark. A mainframe console still answers, guarding the way up to the core. One log here was badly scrambled.",
+      "exits": [
+        { "direction": "south", "target": "corridor", "requiredFlag": "", "lockedMessage": "" },
+        { "direction": "up", "target": "core", "requiredFlag": "narrative_solved", "lockedMessage": "the lift to the core will not move until the mainframe is satisfied." }
+      ],
+      "items": [],
+      "logs": ["log_server"],
+      "puzzles": ["narrative_core"]
+    },
+    {
+      "id": "core",
+      "name": "Containment Core",
+      "description": "A round chamber built around a single dark column: the containment core. This is where you were kept, and where you can choose what happens next. The core waits for you to use it.",
+      "exits": [
+        { "direction": "down", "target": "server_room", "requiredFlag": "", "lockedMessage": "" }
+      ],
+      "items": [],
+      "logs": ["log_core"],
+      "puzzles": []
+    }
+  ]
+}
