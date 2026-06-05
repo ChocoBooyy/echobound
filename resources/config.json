@@ -25,12 +25,13 @@
     "inventoryLabel": "you are carrying:",
     "inventoryEmpty": "you carry nothing.",
     "hintCipher": "ciphered string: %s",
-    "hintLogic": "enter the corrected boolean expression.",
+    "hintLogic": "enter the corrected (boolean expression.",
     "hintNarrative": "answer in a single word.",
     "mapHeader": "known layout:",
     "mapLocked": "(sealed)",
     "endingHint": "the core waits. when you are ready, use core.",
-    "debugTrust": "[debug] ward trust: %d"
+    "debugTrust": "[debug] ward trust: %d",
+    "fixturesLabel": "notable fixtures:"
   },
   "text": {
     "intro": [
