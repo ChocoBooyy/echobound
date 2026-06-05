@@ -37,12 +37,12 @@ public final class SaveManager {
         JSONObject root = new JSONObject();
         root.put(KEY_ROOM, state.currentRoomId());
         root.put(KEY_TRUST, state.wardTrust());
-        root.put(KEY_INVENTORY, new JSONArray(state.inventory()));
-        root.put(KEY_VISITED, new JSONArray(state.visitedRooms()));
-        root.put(KEY_FLAGS, new JSONArray(state.flags()));
-        root.put(KEY_LOGS, new JSONArray(state.discoveredLogs()));
-        root.put(KEY_PUZZLES, new JSONArray(state.solvedPuzzles()));
-        root.put(KEY_TRIGGERS, new JSONArray(state.firedTriggers()));
+        root.put(KEY_INVENTORY, toJsonArray(state.inventory()));
+        root.put(KEY_VISITED, toJsonArray(state.visitedRooms()));
+        root.put(KEY_FLAGS, toJsonArray(state.flags()));
+        root.put(KEY_LOGS, toJsonArray(state.discoveredLogs()));
+        root.put(KEY_PUZZLES, toJsonArray(state.solvedPuzzles()));
+        root.put(KEY_TRIGGERS, toJsonArray(state.firedTriggers()));
         try {
             Files.writeString(Path.of(SAVE_FILE), root.toString(INDENT), StandardCharsets.UTF_8);
             terminal.print(Terminal.Voice.SYSTEM, String.format(config.msg(Config.MSG_SAVE_OK), SAVE_FILE));
@@ -77,5 +77,13 @@ public final class SaveManager {
         for (int i = 0; i < array.length(); i++) {
             sink.accept(array.getString(i));
         }
+    }
+
+    private static JSONArray toJsonArray(Iterable<String> values) {
+        JSONArray array = new JSONArray();
+        for (String value : values) {
+            array.put(value);
+        }
+        return array;
     }
 }
