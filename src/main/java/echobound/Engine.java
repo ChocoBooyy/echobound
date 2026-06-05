@@ -13,6 +13,7 @@ import echobound.world.Item;
 import echobound.world.Log;
 import echobound.world.Room;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -323,6 +324,21 @@ public final class Engine {
             }
             terminal.print(Terminal.Voice.ROOM, config.msg(Config.MSG_LOGS_LABEL) + SPACE + String.join(LIST_SEPARATOR, titles));
         }
+        List<String> fixtures = fixtureTargets(room);
+        if (!fixtures.isEmpty()) {
+            terminal.print(Terminal.Voice.ROOM, config.msg(Config.MSG_FIXTURES_LABEL) + SPACE + String.join(LIST_SEPARATOR, fixtures));
+        }
+    }
+
+    private List<String> fixtureTargets(Room room) {
+        LinkedHashSet<String> fixtures = new LinkedHashSet<>();
+        for (String puzzleId : room.puzzleIds()) {
+            fixtures.add(loader.puzzle(puzzleId).target());
+        }
+        if (room.id().equals(loader.endingTriggerRoom())) {
+            fixtures.add(loader.endingTriggerTarget());
+        }
+        return new ArrayList<>(fixtures);
     }
 
     private void reportDebug() {

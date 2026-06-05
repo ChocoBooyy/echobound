@@ -47,7 +47,8 @@ writes save data to `save.json` in the working directory.
 A bare direction works on its own, so `north` is the same as `go north`. The parser
 normalizes input and resolves partial verbs, so `inv` reaches `inventory` and `ex panel`
 reaches `examine panel`. During the typewriter effect, pressing enter prints the rest of
-the line at once.
+the line at once. Rooms with non-item interactables also print a "notable fixtures" line
+to make targets like `panel`, `terminal`, or `mainframe` explicit.
 
 ## Puzzles
 
