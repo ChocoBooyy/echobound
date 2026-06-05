@@ -38,6 +38,7 @@ public final class Config {
     public static final String MSG_MAP_LOCKED = "mapLocked";
     public static final String MSG_ENDING_HINT = "endingHint";
     public static final String MSG_DEBUG_TRUST = "debugTrust";
+    public static final String MSG_FIXTURES_LABEL = "fixturesLabel";
 
     public static final String TEXT_INTRO = "intro";
     public static final String TEXT_HELP = "help";
